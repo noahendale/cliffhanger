@@ -4,9 +4,10 @@ import '../styles/_nav.scss';
 import axios from 'axios';
 import Shows from './Shows';
 import base from '../base';
+import config from '../config'
 
 const movieDB = {};
-movieDB.apiKey = '2260b97cfa33dd979f11ee4d6214853e';
+movieDB.apiKey = config.MOVIEDB_API_KEY;
 
 class App extends Component {
 
