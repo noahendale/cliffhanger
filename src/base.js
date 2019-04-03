@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import config from './config';
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "config.FIREBASE_API_KEY",
+    apiKey: config.FIREBASE_API_KEY,
     authDomain: "cliffhanger-3cb85.firebaseapp.com",
     databaseURL: "https://cliffhanger-3cb85.firebaseio.com",
     projectId: "cliffhanger-3cb85",

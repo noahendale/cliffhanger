@@ -16,14 +16,14 @@ class Shows extends React.Component {
                   <i 
                     className = "fas fa-star"
                     aria-hidden = "true"
-                    onClick = { () => {console.log(show.favourited);this.props.onUnFav(show)} }>
+                    onClick = { () => {this.props.onUnFav(show)} }>
                   </i>
                   :
                   // If not favourited:
                   <i 
                     className = "fal fa-star"
                     aria-hidden = "true"
-                    onClick = { () => {console.log(show.favourited);this.props.onFav(show)} }>
+                    onClick = { () => {this.props.onFav(show)} }>
                   </i>}
                   <p>{ show.overview }</p>
                   <img src = {`http://image.tmdb.org/t/p/w300/${show.backdrop_path}`} alt = {`${show.name} poster`}/>
